@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_UI.SignUpPage" Title="Sign Up">
+
+    <StackLayout>
+
+        <StackLayout Margin="50,0,50,0">
+            <Image Source="intec.jpg" HeightRequest="150" WidthRequest="150"/>
+        </StackLayout>
+
+
+        <StackLayout HorizontalOptions="FillAndExpand" Padding="5,0,5,0" VerticalOptions="Center">
+
+            <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0" Padding="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="40" WidthRequest="40" Padding="0" Margin="5" BorderColor="White">
+                        <Image Source="user.jpg" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Entry x:Name="LoginUserNameField" HorizontalOptions="FillAndExpand" Placeholder="Name"/>
+                    <!--<local:CustomEntry Placeholder="Email" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>-->
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0" Padding="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="40" WidthRequest="40" Padding="0" Margin="5" BorderColor="White">
+                        <Image Source="loginUser.jpg" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Entry x:Name="LoginUserField" HorizontalOptions="FillAndExpand" Placeholder="Email"/>
+                    <!--<local:CustomEntry Placeholder="Email" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>-->
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0" Padding="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Red" HeightRequest="0" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                        <Image Source="redPadlock.jpg" Aspect="Fill" Margin="0"/>
+                    </Frame>
+                    <Entry x:Name="LoginPswField" HorizontalOptions="FillAndExpand" Placeholder="Password" IsPassword="True"/>
+                    <!--<local:CustomEntry Placeholder="Password" IsPassword="True" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>-->
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0" Padding="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Red" HeightRequest="0" WidthRequest="40" CornerRadius="100" Padding="0" Margin="5">
+                    </Frame>
+                    <Entry x:Name="LoginPswConfirmField" HorizontalOptions="FillAndExpand" Placeholder="Confirm Password" IsPassword="True"/>
+                    <!--<local:CustomEntry Placeholder="Password" IsPassword="True" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>-->
+                </StackLayout>
+            </Frame>
+
+
+
+            <Button Text="Sign Up" BackgroundColor="Red" TextColor="White" CornerRadius="30" Margin="10" Clicked="SignInCompleted_Click" IsEnabled="True"/>
+
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>

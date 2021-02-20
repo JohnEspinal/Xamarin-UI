@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_UI.HomePage">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <ContentPage Title="Status" IconImageSource="status.jpg">
+            <StackLayout Margin="50,0,50,0">
+                <Image Source="intec.jpg" HeightRequest="300" WidthRequest="300"/>
+
+                <Label Text="Su estatus es normal" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+
+
+        </ContentPage>
+
+
+        <ContentPage Title="Subjects" IconImageSource="grid.png">
+
+            <StackLayout Margin="50,0,50,0">
+
+
+                <Label Text="Sus materias son: " TextDecorations="Underline" TextColor="DarkRed" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="Desarrollo de App Moviles "  Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="Ingenieria de Factores humanos"   Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="Gestion de Proyectos "  Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="Economia de empresas "  Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+            </StackLayout>
+
+        </ContentPage>
+
+
+        <ContentPage Title="Profile" IconImageSource="user.png">
+            <StackLayout Margin="50,0,50,0">
+
+
+                <Label Text="John Espinal" TextDecorations="Underline" TextColor="DarkRed" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="22 years old"  Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="Ingenieria de software "   Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Start"/>
+            </StackLayout>
+
+
+        
+
+        </ContentPage>
+
+    </TabbedPage.Children>
+
+</TabbedPage>
