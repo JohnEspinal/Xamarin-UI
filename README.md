@@ -25,13 +25,13 @@ Status
 Subjects
 
 <p align="center">
-<img src="Images\TabbedPage1.png" width="300px" title="sample"/>
+<img src="Images\TabbedPage2.png" width="300px" title="sample"/>
 </p>
 
 Profile
 
 <p align="center">
-<img src="Images\TabbedPage1.png" width="300px" title="sample"/>
+<img src="Images\TabbedPage3.png" width="300px" title="sample"/>
 </p>
 
 
